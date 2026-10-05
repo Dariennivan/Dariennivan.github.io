@@ -1,0 +1,377 @@
+/* ============================================================
+   ESTILOS GLOBALES
+   Configuración general de toda la página.
+   ============================================================ */
+
+/* Eliminamos márgenes y espacios predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general del cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Contenedor principal utilizado para centrar el contenido */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ============================================================
+   ENCABEZADO
+   Estilos correspondientes al header del sistema.
+   ============================================================ */
+
+.encabezado {
+    background: #17365d;
+    color: white;
+    padding: 25px 0;
+}
+
+/* Organización del contenido del encabezado */
+.encabezado-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Logotipo o nombre del COPACI */
+.logo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 1rem;
+}
+
+/* Título del sistema */
+.titulo-sistema {
+    text-align: right;
+}
+
+.titulo-sistema h2 {
+    font-size: 1.7rem;
+}
+
+
+/* ============================================================
+   MENÚ DE NAVEGACIÓN
+   Diseño de la barra principal de navegación.
+   ============================================================ */
+
+.menu {
+    background: #0f2742;
+}
+
+/* Eliminamos las viñetas de la lista */
+.menu-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos de los enlaces del menú */
+.menu-lista a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: 0.3s;
+}
+
+/* Efecto al colocar el cursor sobre un enlace */
+.menu-lista a:hover {
+    background: #2f75b5;
+}
+
+
+/* ============================================================
+   SECCIÓN DE BIENVENIDA
+   Presentación principal del portal.
+   ============================================================ */
+
+.bienvenida {
+    background: white;
+    padding: 70px 0;
+}
+
+/* Distribución del texto y la imagen */
+.bienvenida-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Área del texto */
+.bienvenida-texto {
+    flex: 1;
+}
+
+.bienvenida-texto h2 {
+    color: #17365d;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.bienvenida-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+
+/* Imagen de bienvenida */
+.bienvenida-imagen {
+    flex: 1;
+}
+
+.bienvenida-imagen img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+
+/* ============================================================
+   BOTONES
+   Estilos para los botones principales del sistema.
+   ============================================================ */
+
+button {
+    background: #2f75b5;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto visual del botón */
+button:hover {
+    background: #17365d;
+    transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   SECCIONES GENERALES
+   Estilos utilizados en las diferentes secciones.
+   ============================================================ */
+
+.seccion {
+    padding: 60px 0;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #17365d;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.descripcion-seccion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* ============================================================
+   TARJETAS DE TRÁMITES
+   Diseño de los servicios ciudadanos.
+   ============================================================ */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Diseño individual de cada tarjeta */
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+/* Movimiento de la tarjeta al pasar el cursor */
+.tarjeta:hover {
+    transform: translateY(-6px);
+}
+
+/* Iconos de las tarjetas */
+.icono {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #17365d;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+
+/* ============================================================
+   BOTONES SECUNDARIOS
+   Enlaces que funcionan visualmente como botones.
+   ============================================================ */
+
+.boton-secundario {
+    display: inline-block;
+    background: #2f75b5;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton-secundario:hover {
+    background: #17365d;
+}
+
+
+/* ============================================================
+   AVISOS
+   Diseño de la sección de avisos importantes.
+   ============================================================ */
+
+.avisos {
+    background: #e8f1f8;
+    padding: 45px 0;
+}
+
+.avisos h2 {
+    color: #17365d;
+    margin-bottom: 20px;
+}
+
+.avisos ul {
+    padding-left: 25px;
+}
+
+.avisos li {
+    margin-bottom: 10px;
+}
+
+
+/* ============================================================
+   INFORMACIÓN
+   Estilos para la información general del portal.
+   ============================================================ */
+
+.informacion {
+    background: white;
+}
+
+.informacion p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ============================================================
+   CONTACTO
+   Diseño de la sección de contacto.
+   ============================================================ */
+
+.contacto {
+    background: #d9eaf7;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.contacto h2 {
+    color: #17365d;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+
+/* ============================================================
+   PIE DE PÁGINA
+   Estilos correspondientes al footer.
+   ============================================================ */
+
+.footer {
+    background: #17365d;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer h3 {
+    margin-bottom: 5px;
+}
+
+
+/* ============================================================
+   DISEÑO RESPONSIVO
+   Adaptación para dispositivos móviles.
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    /* El encabezado pasa a formato vertical */
+    .encabezado-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* El título deja de estar alineado a la derecha */
+    .titulo-sistema {
+        text-align: center;
+    }
+
+    /* El menú se organiza verticalmente */
+    .menu-lista {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* La bienvenida también pasa a formato vertical */
+    .bienvenida-contenido {
+        flex-direction: column;
+    }
+
+    /* Las tarjetas se muestran en una sola columna */
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    /* El footer se organiza verticalmente */
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}

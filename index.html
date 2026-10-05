@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- DARIEN IVAN=========================================================
+         CONFIGURACIÓN GENERAL DEL DOCUMENTO
+         Esta sección contiene la información básica de la página.
+        ========================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Sistema de Gestión Ciudadana | COPACI</title>
+
+    <!-- Vinculación con la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HEADER - ENCABEZADO PRINCIPAL
+         Contiene el nombre del sistema y una breve descripción.
+         ========================================================= -->
+    <header class="encabezado">
+
+        <div class="contenedor encabezado-contenido">
+
+            <!-- Nombre principal del sistema -->
+            <div class="logo">
+                <h1>COPACI</h1>
+                <p>Granjas Guadalupe</p>
+            </div>
+
+            <!-- Información complementaria del portal -->
+            <div class="titulo-sistema">
+                <h2>Sistema de Gestión Ciudadana</h2>
+                <p>Portal de atención y participación ciudadana</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         NAV - MENÚ DE NAVEGACIÓN
+         Permite desplazarse entre las diferentes secciones.
+         ========================================================= -->
+    <nav class="menu">
+
+        <div class="contenedor">
+
+            <ul class="menu-lista">
+
+                <!-- Enlace hacia el inicio -->
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <!-- Enlace hacia los trámites -->
+                <li>
+                    <a href="#tramites">Trámites</a>
+                </li>
+
+                <!-- Enlace hacia los avisos -->
+                <li>
+                    <a href="#avisos">Avisos</a>
+                </li>
+
+                <!-- Enlace hacia información -->
+                <li>
+                    <a href="#informacion">Información</a>
+                </li>
+
+                <!-- Enlace hacia contacto -->
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================================
+         MAIN - CONTENIDO PRINCIPAL
+         Contiene las diferentes secciones de información.
+         ========================================================= -->
+    <main>
+
+        <!-- =====================================================
+             SECTION - PRESENTACIÓN / INICIO
+             Es la sección de bienvenida al sistema.
+             ===================================================== -->
+        <section id="inicio" class="bienvenida">
+
+            <div class="contenedor bienvenida-contenido">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Bienvenido al Sistema de Gestión Ciudadana</h2>
+
+                    <p>
+                        Este portal tiene como finalidad facilitar el acceso
+                        a información, trámites y avisos para los habitantes
+                        de Granjas Guadalupe.
+                    </p>
+
+                    <!-- Botón de acción principal -->
+                    <button onclick="location.href='#tramites'">
+                        Consultar trámites
+                    </button>
+
+                </div>
+
+                <!-- Imagen representativa del sistema -->
+                <div class="bienvenida-imagen">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+                        alt="Personas participando en una comunidad">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION - TRÁMITES
+             Presenta los principales servicios disponibles.
+             ===================================================== -->
+        <section id="tramites" class="seccion">
+
+            <div class="contenedor">
+
+                <h2>Trámites y Servicios</h2>
+
+                <p class="descripcion-seccion">
+                    Consulta algunos de los servicios y gestiones
+                    disponibles para la ciudadanía.
+                </p>
+
+
+                <!-- =================================================
+                     ARTICLE 1 - TRÁMITE
+                     Cada artículo representa un servicio.
+                     ================================================= -->
+                <div class="tarjetas">
+
+                    <article class="tarjeta">
+
+                        <div class="icono">📄</div>
+
+                        <h3>Solicitud de trámites</h3>
+
+                        <p>
+                            Consulta información sobre solicitudes y
+                            gestiones ciudadanas.
+                        </p>
+
+                        <a href="#contacto" class="boton-secundario">
+                            Más información
+                        </a>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         ARTICLE 2 - TRÁMITE
+                         ================================================= -->
+                    <article class="tarjeta">
+
+                        <div class="icono">🏘️</div>
+
+                        <h3>Participación ciudadana</h3>
+
+                        <p>
+                            Conoce las actividades y mecanismos de
+                            participación de la comunidad.
+                        </p>
+
+                        <a href="#informacion" class="boton-secundario">
+                            Consultar
+                        </a>
+
+                    </article>
+
+
+                    <!-- =================================================
+                         ARTICLE 3 - TRÁMITE
+                         ================================================= -->
+                    <article class="tarjeta">
+
+                        <div class="icono">📢</div>
+
+                        <h3>Reportes ciudadanos</h3>
+
+                        <p>
+                            Consulta información para comunicar
+                            situaciones que requieran atención.
+                        </p>
+
+                        <a href="#contacto" class="boton-secundario">
+                            Realizar reporte
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             ASIDE - AVISOS
+             Contiene información importante para los ciudadanos.
+             ========================================================= -->
+        <aside id="avisos" class="avisos">
+
+            <div class="contenedor">
+
+                <h2>Avisos importantes</h2>
+
+                <!-- Lista estructurada de avisos -->
+                <ul>
+
+                    <li>
+                        Mantente informado sobre las actividades
+                        de la comunidad.
+                    </li>
+
+                    <li>
+                        Consulta periódicamente las nuevas
+                        publicaciones del sistema.
+                    </li>
+
+                    <li>
+                        Participa en las actividades ciudadanas
+                        de tu comunidad.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================================
+             SECTION - INFORMACIÓN
+             Explica brevemente la finalidad del portal.
+             ========================================================= -->
+        <section id="informacion" class="seccion informacion">
+
+            <div class="contenedor">
+
+                <h2>Información del portal</h2>
+
+                <p>
+                    El Sistema de Gestión Ciudadana busca proporcionar
+                    un espacio digital organizado para consultar
+                    información relacionada con los servicios,
+                    avisos y participación de la comunidad de
+                    Granjas Guadalupe.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             SECTION - CONTACTO
+             Información de contacto del sistema.
+             ========================================================= -->
+        <section id="contacto" class="contacto">
+
+            <div class="contenedor">
+
+                <h2>Contacto</h2>
+
+                <p>
+                    Para obtener información sobre los servicios y
+                    actividades ciudadanas, consulta los medios
+                    de atención correspondientes.
+                </p>
+
+                <button>
+                    Solicitar información
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER - PIE DE PÁGINA
+         Contiene información final del portal.
+         ========================================================= -->
+    <footer class="footer">
+
+        <div class="contenedor footer-contenido">
+
+            <div>
+                <h3>COPACI Granjas Guadalupe</h3>
+
+                <p>
+                    Sistema de Gestión Ciudadana
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    © 2026 Darien Ivan Paniagua Galan.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
